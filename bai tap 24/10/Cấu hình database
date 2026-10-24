@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "QLTVConnection": "Server=(localdb)\\MSSQLLocalDB;Database=LibraryDB;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+}
