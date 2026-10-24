@@ -1,0 +1,3 @@
+dotnet ef migrations add InitialLibraryDB --context QLTVDBContext
+dotnet ef database update --context QLTVDBContext
+dotnet ef migrations add InitialLibraryDB --context QLTVDBContext --project QLTV --startup-project QLTV
