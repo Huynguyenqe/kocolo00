@@ -3,3 +3,9 @@
     "QLTVConnection": "Server=(localdb)\\MSSQLLocalDB;Database=LibraryDB;Trusted_Connection=True;TrustServerCertificate=True;"
   }
 }
+using Microsoft.EntityFrameworkCore;
+using QLTV.Data;
+
+builder.Services.AddDbContext<QLTVDBContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("QLTVConnection")));
